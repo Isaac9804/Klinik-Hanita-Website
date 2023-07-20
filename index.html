@@ -1,24 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Klinik Hanita</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-</head>
-<body>
-    <div class="flex">
-        <nav>
-            <img src="/images/Logo Clinic 2.png" alt="Logo">
-        </nav>
-        <nav>
-            <ul>About</ul>
-            <ul>Career</ul>
-            <ul>Services</ul>
-        </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="input.css" />
+    <link rel="stylesheet" href="css/main.css" />
 
-    </div>
-    
-</body>
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="headerSec">
+      <!-- Navigation Bar -->
+      <nav class="flex justify-between bg-lightPurple items-center">
+        <a href="#"
+          ><img src="images/Logo Clinic 4.png" alt="logoKlinikHanita"
+        /></a>
+        <ul class="flex">
+          <a href="#">
+            <li class="hover:text-yellow-300">Home</li>
+          </a>
+          <a href="#">
+            <li class="hover:text-yellow-300">About</li>
+          </a>
+          <a href="#">
+            <li class="hover:text-yellow-300">Services</li>
+          </a>
+          <a href="#">
+            <li class="hover:text-yellow-300">Panels</li>
+          </a>
+          <a href="#">
+            <li class="hover:text-yellow-300">Career</li>
+          </a>
+        </ul>
+      </nav>
+      <!-- Header Hero -->
+      <div class="hero flex bg-gradient-to-b from-lightPurple z-[-2]">
+        <div class="docPic">
+          <img src="images/Doc image.png" alt="GambarDoc" />
+        </div>
+        <div class="rightHeaderInfo">
+          <div class="topHeaderInfo">
+            <div class="klinikHanita flex">
+              <h1 class="text-white text-8xl font-bold tracking-widest">
+                KLINIK&nbsp;
+              </h1>
+              <h1 class="text-yellow-300 text-8xl font-bold tracking-widest">
+                HANITA
+              </h1>
+            </div>
+            <h2 class="headerDiscription text-white">
+              To provide patient-centered healthcare with excellence in quality,
+              service and access
+            </h2>
+            <a href="https://wa.me/60192484931">
+              <div
+                class="button1 bg-green-600 border-4 border-solid rounded-full flex justify-center items-center hover:bg-green-400"
+              >
+                <svg
+                  width="41"
+                  height="41"
+                  viewBox="0 0 41 41"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M33.5419 7.74815C30.1782 4.3806 25.705 2.52525 20.9391 2.52329C11.1192 2.52329 3.12688 10.515 3.12304 20.3379C3.12167 23.478 3.94206 26.5429 5.50119 29.2447L2.97363 38.4768L12.4182 35.9993C15.0204 37.4187 17.9502 38.1668 20.932 38.1678H20.9393C20.9387 38.1678 20.9399 38.1678 20.9393 38.1678C30.7581 38.1678 38.7512 30.1753 38.7553 20.3522C38.757 15.5917 36.9056 11.1156 33.5419 7.74815ZM20.9392 35.159H20.9332C18.2762 35.158 15.67 34.444 13.3964 33.0949L12.8558 32.774L7.25125 34.2441L8.74725 28.7798L8.39512 28.2195C6.91287 25.8619 6.13001 23.1369 6.13117 20.3389C6.13435 12.1745 12.7773 5.53228 20.9452 5.53228C24.9003 5.53351 28.6184 7.07587 31.4142 9.87484C34.2099 12.6738 35.7487 16.3943 35.7471 20.3509C35.7438 28.516 29.101 35.159 20.9392 35.159Z"
+                    fill="white"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M29.0619 24.0686C28.6168 23.8458 26.4281 22.769 26.0201 22.6203C25.6121 22.4718 25.3153 22.3975 25.0185 22.8431C24.7218 23.2887 23.8687 24.2915 23.609 24.5886C23.3493 24.8856 23.0896 24.923 22.6445 24.6999C22.1994 24.4771 20.765 24.0071 19.0647 22.4905C17.7413 21.31 16.8479 19.8524 16.5881 19.4066C16.3285 18.961 16.5605 18.7201 16.7834 18.4981C16.9836 18.2986 17.2286 17.9782 17.4512 17.7182C17.6737 17.4584 17.7479 17.2725 17.8963 16.9757C18.0447 16.6785 17.9706 16.4185 17.8592 16.1958C17.7479 15.973 16.8577 13.7818 16.4867 12.8903C16.1253 12.0224 15.7583 12.14 15.485 12.1262C15.2258 12.1133 14.9286 12.1106 14.6319 12.1106C14.3352 12.1106 13.8528 12.222 13.4448 12.6676C13.0368 13.1133 11.8867 14.1904 11.8867 16.3813C11.8867 18.5725 13.4819 20.6893 13.7045 20.9863C13.927 21.2835 16.8435 25.7797 21.3091 27.708C22.3711 28.1667 23.2004 28.4406 23.8468 28.6457C24.9132 28.9846 25.8837 28.9367 26.6507 28.8221C27.506 28.6943 29.2845 27.7452 29.6554 26.7055C30.0264 25.6656 30.0264 24.7741 29.9151 24.5886C29.8038 24.4029 29.507 24.2915 29.0619 24.0686Z"
+                    fill="white"
+                  />
+                </svg>
+
+                <h2 class="text-white">CONTACT US</h2>
+              </div>
+            </a>
+          </div>
+          <div class="bottomHeaderInfo flex pt-14">
+            <div class="time flex gap-8">
+              <svg
+                width="39"
+                height="205"
+                viewBox="0 0 39 205"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19 193.667C16.0545 193.667 13.6667 196.054 13.6667 199C13.6667 201.946 16.0545 204.333 19 204.333C21.9455 204.333 24.3333 201.946 24.3333 199C24.3333 196.054 21.9455 193.667 19 193.667ZM18 40L18 199L20 199L20 40L18 40Z"
+                  fill="white"
+                />
+                <path
+                  d="M19.5 38.7188C15.6989 38.7188 11.9832 37.5916 8.82264 35.4798C5.66214 33.368 3.19882 30.3665 1.7442 26.8547C0.289577 23.3429 -0.0910182 19.4787 0.650542 15.7506C1.3921 12.0225 3.22251 8.59808 5.9103 5.91029C8.59809 3.2225 12.0225 1.39209 15.7506 0.650534C19.4787 -0.0910258 23.3429 0.28957 26.8547 1.74419C30.3665 3.19881 33.368 5.66213 35.4798 8.82264C37.5916 11.9831 38.7188 15.6989 38.7188 19.5C38.7188 24.5971 36.6939 29.4855 33.0897 33.0897C29.4855 36.6939 24.5971 38.7188 19.5 38.7188ZM19.5 2.84375C16.2057 2.84375 12.9854 3.82062 10.2463 5.65084C7.50719 7.48105 5.37231 10.0824 4.11164 13.1259C2.85097 16.1695 2.52112 19.5185 3.1638 22.7495C3.80649 25.9805 5.39284 28.9483 7.72226 31.2777C10.0517 33.6072 13.0195 35.1935 16.2505 35.8362C19.4815 36.4789 22.8305 36.149 25.8741 34.8884C28.9176 33.6277 31.519 31.4928 33.3492 28.7537C35.1794 26.0146 36.1563 22.7943 36.1563 19.5C36.1563 15.0825 34.4014 10.8459 31.2778 7.72225C28.1541 4.5986 23.9175 2.84375 19.5 2.84375Z"
+                  fill="white"
+                />
+                <path
+                  d="M24.9325 26.7519L18.5903 20.4097C18.4716 20.29 18.3776 20.148 18.3139 19.9919C18.2501 19.8358 18.2178 19.6686 18.2188 19.5V9.25H20.7813V18.9747L26.7519 24.9325L24.9325 26.7519Z"
+                  fill="white"
+                />
+              </svg>
+              <div class="timeInfo text-white font-bold flex flex-col pr-20">
+                <h2 class="pb-10">BUSINESS HOURS</h2>
+                <div class="timelist">
+                  <h3>MONDAY - FRIDAY (9AM - 10PM)</h3>
+                  <h3>SATURDAY (9AM - 19PM)</h3>
+                  <h3>SUNDAY (9AM - 9PM)</h3>
+                  <h3>PUBLIC HOLIDAY (10AM - 9PM)</h3>
+                </div>
+              </div>
+            </div>
+            <div class="contact flex">
+              <svg
+                width="13"
+                height="213"
+                viewBox="0 0 13 213"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.4274 0.66693C2.48203 0.696238 0.118092 3.10769 0.147399 6.05307C0.176706 8.99844 2.58816 11.3624 5.53353 11.3331C8.47891 11.3038 10.8428 8.89231 10.8135 5.94693C10.7842 3.00156 8.37278 0.637623 5.4274 0.66693ZM7.4274 201.667C4.48203 201.696 2.11809 204.108 2.1474 207.053C2.17671 209.998 4.58816 212.362 7.53353 212.333C10.4789 212.304 12.8428 209.892 12.8135 206.947C12.7842 204.002 10.3728 201.638 7.4274 201.667ZM4.48052 6.00995L6.48052 207.01L8.48042 206.99L6.48042 5.99005L4.48052 6.00995Z"
+                  fill="white"
+                />
+              </svg>
+              <div class="contactList flex flex-col">
+                <div class="email flex gap-5">
+                  <svg
+                    width="31"
+                    height="26"
+                    viewBox="0 0 31 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M29.3133 3.97241L15.1566 14.3758L1 3.97241"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M3.83133 1H26.4819C28.0392 1 29.3133 2.33758 29.3133 3.9724V21.8068C29.3133 23.4416 28.0392 24.7792 26.4819 24.7792H3.83133C2.2741 24.7792 1 23.4416 1 21.8068V3.9724C1 2.33758 2.2741 1 3.83133 1Z"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <div class="emailInfo text-white pb-16">
+                    <h2 class="font-bold">EMAIL US AT :</h2>
+                    <h3 class="font-normal">klinikhanita@gmail.com</h3>
+                  </div>
+                </div>
+                <div class="phone flex gap-5">
+                  <svg
+                    width="24"
+                    height="25"
+                    viewBox="0 0 24 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M22.6222 18.0293V21.4533C22.6234 21.7712 22.5614 22.0859 22.4401 22.3771C22.3188 22.6684 22.1409 22.9298 21.9178 23.1447C21.6947 23.3596 21.4313 23.5232 21.1444 23.625C20.8576 23.7269 20.5537 23.7647 20.2521 23.7361C16.9067 23.3544 13.6931 22.1543 10.8697 20.2321C8.24281 18.4797 6.01571 16.1416 4.3465 13.3839C2.50913 10.4063 1.36569 7.01623 1.00882 3.48828C0.981656 3.17266 1.01739 2.85455 1.11374 2.55422C1.21009 2.25389 1.36496 1.9779 1.56847 1.74385C1.77199 1.50979 2.0197 1.32278 2.29583 1.19474C2.57196 1.06669 2.87047 1.00041 3.17234 1.00011H6.43391C6.96153 0.994659 7.47304 1.19081 7.8731 1.552C8.27315 1.91319 8.53445 2.41477 8.6083 2.96326C8.74596 4.05904 9.00126 5.13496 9.36933 6.17049C9.51561 6.57901 9.54726 7.02299 9.46055 7.44982C9.37384 7.87665 9.1724 8.26844 8.88009 8.57876L7.49936 10.0283C9.04704 12.8858 11.3007 15.2517 14.0225 16.8765L15.4032 15.4269C15.6988 15.1201 16.072 14.9086 16.4786 14.8176C16.8852 14.7265 17.3081 14.7598 17.6972 14.9133C18.6836 15.2997 19.7085 15.5678 20.7522 15.7123C21.2804 15.7905 21.7627 16.0698 22.1075 16.497C22.4522 16.9242 22.6354 17.4695 22.6222 18.0293Z"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <div class="phoneInfo text-white">
+                    <h2 class="font-bold">CALL US AT :</h2>
+                    <h3 class="font-normal">03-89271005 / 013-2401055</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="infoBoxSec1 bg-veryLightPurple"></div>
+    </section>
+    <section id="promotionSec">
+      <div></div>
+    </section>
+  </body>
 </html>
